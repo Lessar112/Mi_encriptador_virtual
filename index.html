@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header-menu-link" href="index.html">
+            <img src="./asset/alura.png" alt="Logo Alura">
+        </a>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <h1 class="presentacion-contenido-titulo">¡Bienvenido a tu encriptador virtual!</h1>
+            <input class="cuadro-encriptador" type="text" placeholder="Ingrese el texto aquí..."/>
+            <div class="encriptador-reglas">
+                <img src="./asset/Pajaro.jpeg" alt="Imagen de alerta" class="mensaje">
+                <p class="texto-regla">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-botones">
+                <button type="button" class="boton-encriptar">Encriptar</button>
+                <button type="button" class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptador-resultado">
+            <div class="contenedor-resultado">
+                <img src="./asset/Zorro.png" alt="Imagen de zorro" class="img-zorro">
+                <p class="texto-v1">No hay ningún mensaje encriptado</p>
+                <p class="texto-v2">Ingresa el texto a encriptar</p>
+            </div>
+            <input type="text" class="resultado" readonly/>
+            <button type="button" class="link-copiar">Copiar</button> 
+        </section>
+    </main>
+    <footer>
+        <p class="footer">Alura Latam | Desarrollado por Lesly Venegas</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

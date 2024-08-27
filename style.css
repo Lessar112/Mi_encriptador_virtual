@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bree+Serif&display=swap');
+
+:root {
+    --color-primario: #AAB396;
+    --color-secundario: #674636;
+    --color-terciario: #F7EED3;
+    --color-letra: #fff9f9;
+
+    --fuente-serif: "Bree Serif", serif;
+    --fuente-script: "Bad Script", cursive;
+}
+
+body{
+    font-family: var(--fuente-serif);
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header.header{
+    background-color:var(--color-primario);
+    padding:10px;
+    text-align:center;
+}
+
+.header-menu-link img{
+    max-width:60px;
+}
+
+.presentacion{
+    padding:20px;
+    text-align: center;
+}
+
+.presentacion-contenido-titulo {
+    font-family:var(--fuente-script);
+    font-size:2em;
+    margin-bottom:20px;
+    color:var(--color-secundario);
+}
+
+.cuadro-encriptador {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border:1px solid var(--color-secundario);
+    border-radius:5px;
+    font-size:1em;
+}
+
+.encriptador-reglas {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.encriptador-reglas .mensaje {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.texto-regla {
+    font-size: 0.9em;
+}
+
+.encriptador-botones {
+    margin-bottom: 20px;
+}
+
+.boton-encriptar, .boton-desencriptar {
+    background-color: var(--color-secundario);
+    color: var(--color-letra);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fuente-serif);
+    font-size: 1em;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover {
+    background-color: var(--color-primario);
+}
+
+.encriptador-resultado .contenedor-resultado {
+    background-color: var(--color-primario);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.encriptador-resultado .img-zorro {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.texto-v1, .texto-v2 {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.resultado {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.link-copiar {
+    background-color: var(--color-secundario);
+    color: var(--color-letra);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fuente-serif);
+    font-size: 1em;
+}
+
+.link-copiar:hover {
+    background-color: var(--color-primario);
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-letra);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
