@@ -1,7 +1,5 @@
-// Esperar a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
-    // Obtener elementos del DOM
-    const inputTexto = document.querySelector('.cuadro-encriptador');
+      const inputTexto = document.querySelector('.cuadro-encriptador');
     const botonEncriptar = document.querySelector('.boton-encriptar');
     const botonDesencriptar = document.querySelector('.boton-desencriptar');
     const botonCopiar = document.querySelector('.link-copiar');
@@ -11,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const textoV2 = document.querySelector('.texto-v2');
     const mensaje = document.querySelector('.mensaje');
 
-    // Expresión regular para validar texto en minúsculas y sin acentos
+    
     const regex = /^[a-zñ\s]+$/;
 
-    // Función para encriptar el texto
+    
     function encriptar() {
         let texto = inputTexto.value;
         let textoCifrado = texto
@@ -26,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (texto.length !== 0 && regex.test(texto)) {
             resultado.value = textoCifrado;
-            imgZorro.src = "./asset/Zorro.png"; // Imagen de zorro (encriptado)
+            imgZorro.src = "./asset/Zorro.png"; 
             textoV1.textContent = "Texto encriptado con éxito";
             textoV2.textContent = "";
-            mensaje.src = "./asset/Pajaro.jpeg"; // Imagen de alerta
+            mensaje.src = "./asset/Pajaro.jpeg"; 
         } else {
             alert("El texto debe estar en minúsculas y sin acentos");
-            resultado.value = ""; // Limpiar el campo de resultado
-            imgZorro.src = "./asset/Zorro.png"; // Imagen por defecto
+            resultado.value = ""; 
+            imgZorro.src = "./asset/Zorro.png"; 
             textoV1.textContent = "Ningún mensaje fue encontrado";
             textoV2.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
             mensaje.src = "./asset/Pajaro.jpeg"; // Imagen de alerta
@@ -52,28 +50,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (texto.length !== 0 && regex.test(texto)) {
             resultado.value = textoCifrado;
-            imgZorro.src = "./asset/Zorro.png"; // Imagen de zorro (desencriptado)
+            imgZorro.src = "./asset/Zorro.png"; 
             textoV1.textContent = "Texto desencriptado con éxito";
             textoV2.textContent = "";
-            mensaje.src = "./asset/Pajaro.jpeg"; // Imagen de alerta
+            mensaje.src = "./asset/Pajaro.jpeg"; 
         } else {
             alert("El texto debe estar en minúsculas y sin acentos");
-            resultado.value = ""; // Limpiar el campo de resultado
-            imgZorro.src = "./asset/Zorro.png"; // Imagen por defecto
+            resultado.value = ""; 
+            imgZorro.src = "./asset/Zorro.png";
             textoV1.textContent = "Ningún mensaje fue encontrado";
             textoV2.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-            mensaje.src = "./asset/Pajaro.jpeg"; // Imagen de alerta
+            mensaje.src = "./asset/Pajaro.jpeg"; 
         }
     }
 
-    // Función para copiar el texto al portapapeles
+    
     function copiar() {
         resultado.select();
         document.execCommand('copy');
         alert("Texto copiado al portapapeles");
     }
 
-    // Asignar eventos a los botones
+   
     botonEncriptar.addEventListener('click', encriptar);
     botonDesencriptar.addEventListener('click', desencriptar);
     botonCopiar.addEventListener('click', copiar);
